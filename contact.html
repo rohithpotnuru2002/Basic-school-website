@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Elite International School</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Elite International</div>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-content reveal">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split-grid">
+      <form class="contact-form reveal" onsubmit="return validateContactForm()">
+        <div class="form-field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Your name"/>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com"/>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="card-panel reveal">
+        <h3>School Office</h3>
+        <p>Email: info@eliteinternationalschool.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: 123 Elite Avenue, Your City</p>
+        <p>Hours: Mon–Fri, 9:00 AM – 4:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Elite International School. All rights reserved.</p>
+  </footer>
+</body>
+</html>

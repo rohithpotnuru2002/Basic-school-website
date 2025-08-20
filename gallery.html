@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Elite International School</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Elite International</div>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-content reveal">
+      <h1>Gallery</h1>
+      <p>Snapshots of campus life and student achievements.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="gallery-grid">
+      <!-- Replace with your own images (local files) -->
+      <img class="reveal" src="gallery1.jpg" alt="Campus"/>
+      <img class="reveal" src="gallery2.jpg" alt="Library"/>
+      <img class="reveal" src="gallery3.jpg" alt="Sports"/>
+      <img class="reveal" src="gallery4.jpg" alt="Labs"/>
+      <img class="reveal" src="gallery5.jpg" alt="Auditorium"/>
+      <img class="reveal" src="gallery6.jpg" alt="Art Studio"/>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Elite International School. All rights reserved.</p>
+  </footer>
+</body>
+</html>
